@@ -1,0 +1,60 @@
+html, body{
+	padding:0px;
+	margin:0px;
+	min-width: 100%;
+	background-color:transparent; 
+}
+
+body{
+	padding-top:0px;
+  pointer-events:none;
+}
+
+.draggable {
+  -webkit-app-region: drag;
+}
+
+.cerrar{
+    position: absolute;
+    right: 14px;
+    width: 20px;
+    height: 20px;
+    top: 14px;
+    transform: scale(1.8);
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+    color:black;
+    text-shadow:0px 0px 10px rgba(255, 255,255, 0.7);
+    opacity:1;
+    pointer-events: all;
+}
+.keymap{
+  max-width:100%;
+  opacity:1;
+  position:relative;
+  top: -20px;
+  pointer-events: none;
+}
+header{
+  background-color:rgba(0,0,0,0.0001);
+  height:40px;
+  border-radius:100px;
+  position:relative;
+  pointer-events: all;
+  cursor:grab;
+}
+body:hover header{
+  background-color:rgba(0,0,0,0.4);
+}
+body:hover .keymap,
+body:hover .cerrar{
+  opacity:1;
+}
+
+
+@media (max-width: 400px) { 
+  .cerrar{
+    transform: scale(1.2);
+  }
+}
+
