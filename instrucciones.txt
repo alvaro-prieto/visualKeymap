@@ -1,0 +1,4 @@
+para debug: electron .
+(se puede activar la consola en el archivo de configuracion)
+
+para release: npm run make
